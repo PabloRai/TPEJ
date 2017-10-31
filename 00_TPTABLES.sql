@@ -1,7 +1,16 @@
+CREATE DATABASE TP_2017
+
+GO
+
+USE TP_2017
+
+GO
+
 CREATE TABLE SOLICITUD (
 	IdIncidencia int PRIMARY KEY,
 	FechaDeRealizacion date NOT NULL,
-	Legajo int NOT NULL
+	Legajo int NOT NULL,
+	IdTipificacion int NOT NULL,
 );
 
 CREATE TABLE COMENTARIO (
@@ -39,3 +48,10 @@ CREATE TABLE DEPARTAMENTO (
 	IdDepartamento int PRIMARY KEY,
 	DescripcionD varchar(50) NOT NULL
 );
+
+CREATE TABLE TIPIFICACION (
+	IdTipificacion int PRIMARY KEY,
+	Nivel int NOT NULL,
+	DescripcionT varchar(50) NOT NULL,
+	HeredaDe int
+)
