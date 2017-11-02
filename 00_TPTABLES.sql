@@ -10,7 +10,7 @@ CREATE TABLE SOLICITUD (
 	IdIncidencia int PRIMARY KEY,
 	FechaDeRealizacion date NOT NULL,
 	Legajo int NOT NULL,
-	IdTipificacion int NOT NULL,
+	IdTipificacion int NOT NULL
 );
 
 CREATE TABLE COMENTARIO (
